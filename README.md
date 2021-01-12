@@ -1,15 +1,14 @@
 # Raspi gpg
 
-A live image to generate gpg key securely.
+A live raspberry pi 3 image to generate gpg key securely and import it to yubikey.
+
+The live image has been generated using buildroot with this latest release `2020.11.1, released December 27th, 2020`.
 
 ## softwares
 
 - [gpg](https://gnupg.org/)
-- [paperkey](https://www.jabberwocky.com/software/paperkey/)
 - [yubikey-manager](https://github.com/Yubico/yubikey-manager)
-- [yubikey-personalization](https://github.com/Yubico/yubikey-personalization)
-- rng-tools
-
+- [yubikey-personalization](https://github.com/Yubico/yubikey-personalization) -> not working
 
 # Usage
 
@@ -24,7 +23,6 @@ Do the first generation of the key :
 
 /!\ Before running the script you should plug in the rpi the yubikey and a usb key
 
-
 ### `./renew_subkeys.sh`
 
 Renew subkeys on the yubikey
@@ -33,6 +31,11 @@ Renew subkeys on the yubikey
 
 # TODO
 
-- un systeme pour backup les keys automatiquement sur une cle/carte sd chiffre luks
-- importation de cles de backup pour recover en cas de perte
-- trng ?
+- make scripts more user friendly
+- trng support
+- fix yubikey-personalization package
+- add paperkey package ?
+
+# More ?
+
+follow this [guide](https://github.com/drduh/YubiKey-Guide).
