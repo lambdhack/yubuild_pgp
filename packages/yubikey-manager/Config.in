@@ -1,0 +1,8 @@
+config BR2_PACKAGE_YUBIKEY_MANAGER
+    bool "yubikey-manager"
+    depends on BR2_PACKAGE_YUBIKEY_PERSONALIZATION
+    select BR2_PACKAGE_PYTHON3
+    help
+        yubikey-manager
+        
+        https://github.com/Yubico/yubikey-manager

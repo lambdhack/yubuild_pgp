@@ -1,0 +1,2 @@
+RNGD_OPTS="-o /dev/random -r /dev/hwrng" 
+

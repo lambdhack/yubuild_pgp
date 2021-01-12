@@ -1,0 +1,10 @@
+config BR2_PACKAGE_YUBIKEY_PERSONALIZATION
+    bool "yubikey-personalization"
+    depends on BR2_PACKAGE_LIBYUBIKEY
+    select BR2_PACKAGE_LIBJSON
+    select BR2_PACKAGE_LIBUSB
+    select BR2_PACKAGE_LIBXSLT
+    help
+        yubikey-personalization
+        
+        https://github.com/Yubico/yubikey-personalization
