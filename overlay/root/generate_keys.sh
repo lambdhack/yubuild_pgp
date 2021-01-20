@@ -5,7 +5,7 @@ pcscd
 
 echo "Set the date"
 
-echo -n "date in format YYY.MM.DD-hh:mm (1970.01.01-00:00): "
+echo -n "date in format YYYY.MM.DD-hh:mm (1970.01.01-00:00): "
 read DATE
 date -s $DATE
 
