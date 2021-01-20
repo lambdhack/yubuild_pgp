@@ -1,4 +1,4 @@
-# Raspi gpg
+# yubuild gpg
 
 A live raspberry pi 3 image to generate gpg key securely and import it to yubikey.
 
